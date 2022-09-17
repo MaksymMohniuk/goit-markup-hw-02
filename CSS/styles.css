@@ -27,9 +27,13 @@ body {
     list-style: none;
 }
 
-.page-nav .link .link-logo .current {
+.link-logo.current {
 color: var(--accent-color);
 }
+
+.menu-link.current {
+    color: var(--accent-color);
+    }
 
 button {
     cursor: pointer;
