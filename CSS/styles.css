@@ -27,6 +27,10 @@ body {
     list-style: none;
 }
 
+.page-nav .link .link-logo .current {
+color: var(--accent-color);
+}
+
 button {
     cursor: pointer;
 }
@@ -54,8 +58,25 @@ color: var(--text-color-primary);
     color: var(--main-text-color);
 }
 
+.menu-link-mail, .menu-link-tel {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color-secondary);
+}
+
 .menu-link:hover,
 .menu-link:focus {
+    color: var(--accent-color);
+}
+
+.menu-link-mail:hover,
+.menu-link-mail:focus {
+    color: var(--accent-color);
+}
+
+.menu-link-tel:hover,
+.menu-link-tel:focus {
     color: var(--accent-color);
 }
 
@@ -84,7 +105,8 @@ color: var(--text-color-primary);
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--text-color-primary);
-    border: none;
+    border-color: transparent;
+    border-radius: 4px;
     background-color: var(--btn-background-color);
 }
 
@@ -95,6 +117,7 @@ color: var(--text-color-primary);
 
 .hidden-section-title {
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -109,6 +132,14 @@ color: var(--text-color-primary);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+}
+
+.team {
+background-color: #f5f4fa;
+}
+
+.list-item {
+background-color: #ffffff;
 }
 
 .employee-name {
@@ -132,7 +163,7 @@ color: var(--text-color-primary);
 }
 
 .menu-link-footer {
-    font-size: 14px;
+    font-style: normal;
     line-height: 1.71;
     color: var(--footer-text-color);
 }
@@ -150,10 +181,13 @@ color: var(--text-color-primary);
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    border-color: transparent;
+    border-radius: 4px;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
+    color: var(--text-color-primary);
     background-color: var(--accent-color);
 }
 
